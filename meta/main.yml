@@ -1,8 +1,8 @@
 galaxy_info:
-  role_name: nginx
+  role_name: lighthouse
   author: user
-  company: user inc.
-  description: Role for installation and managing nginx server
+  company: user inc
+  description: Role for installation and managing Lighthouse
 
   license: MIT
 
@@ -17,8 +17,14 @@ galaxy_info:
         - jessie
 
   galaxy_tags:
+    - clickhouse
+    - database
+    - gui
     - web
-    - nginx
-    - http
+    - monitoring
 
-dependencies: []
+dependencies:
+  - src: git@github.com:biparasite/nginx.git
+    scm: git
+    version: "0.1.1"
+    name: nginx
