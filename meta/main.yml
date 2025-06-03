@@ -1,0 +1,30 @@
+galaxy_info:
+  role_name: lighthouse
+  author: user
+  company: user inc
+  description: Role for installation and managing Lighthouse
+
+  license: MIT
+
+  min_ansible_version: "2.11"
+
+  platforms:
+    - name: Debian
+      versions:
+        - bullseye
+        - buster
+        - stretch
+        - jessie
+
+  galaxy_tags:
+    - clickhouse
+    - database
+    - gui
+    - web
+    - monitoring
+
+dependencies:
+  - src: git@github.com:InfernoFeniks/ansible-nginx.git
+    scm: git
+    version: "0.1.1"
+    name: nginx

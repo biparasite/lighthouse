@@ -1,0 +1,6 @@
+---
+# vars file for roles/lighthause
+lighthouse:
+  source: https://github.com/VKCOM/lighthouse.git
+  dir: /var/lib/lighthouse
+  logs: lighthouse
